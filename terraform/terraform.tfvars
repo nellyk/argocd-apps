@@ -1,0 +1,11 @@
+resource_group_name   = "argocd"
+location              = "westeurope"
+public_ssh_key        = ""
+vnet_address_prefix   = ["172.20.0.0/16"]
+subnet_address_prefix = ["172.20.1.0/24"]
+agents_count          = 3
+agents_size           = "Standard_B8ms"
+bootstrap_repo_url    = "https://github.com/nellyk/argocd-apps.git"
+bootstrap_repo_path   = "apps"
+bootstrap_repo_branch = "main"
+dns_prefix            = "myargocdtestnelly"
